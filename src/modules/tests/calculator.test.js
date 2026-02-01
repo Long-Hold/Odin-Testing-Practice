@@ -12,4 +12,14 @@ describe('createCalculator', () => {
             expect(calculator.add(num1, num2)).toEqual(result);
         });
     });
+    describe('subtract()', () => {
+        test.each([
+            [1, 1, 0],
+            [0, 0, 0],
+            [1, 2, -1],
+            [-1, -3, 2],
+        ])('subtracts "%i" - "%i" and returns "%i".', (num1, num2, result) => {
+           expect(calculator.subtract(num1, num2)).toEqual(result); 
+        });
+    })
 });
