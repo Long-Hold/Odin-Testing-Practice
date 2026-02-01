@@ -33,5 +33,15 @@ describe('createCalculator', () => {
         test('throws RangeError when num2 is 0', () => {
             expect(() => calculator.divide(1, 0)).toThrow(RangeError);
         })
-    })
+    });
+    describe('multiply()', () => {
+        test.each([
+            [1, 1, 1],
+            [0, 1, 0],
+            [-1, -1, 1],
+            [1, -1, -1],
+        ])('multiplies "%i" and "%i" and returns "%i".', (num1, num2, result) => {
+            expect(calculator.multiply(num1, num2)).toEqual(result);
+        });
+    });
 });
