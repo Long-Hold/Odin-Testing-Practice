@@ -1,4 +1,3 @@
-import { createTestScheduler } from "jest";
 import { capitalize } from "../functions/capitalize";
 
 describe('capitalize', () => {
