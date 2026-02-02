@@ -7,7 +7,7 @@ export function analyzeArray(numsArray) {
     };
 
     analysisObj.average = getArrayAverage(numsArray);
-
+    analysisObj.min = getMinValue(numsArray);
     return analysisObj;
 }
 
@@ -19,4 +19,8 @@ function getArrayAverage(numsArray) {
     );
 
     return Math.trunc(arraySum / numsArray.length);
+}
+
+function getMinValue(numsArray) {
+    return Math.min(...numsArray);
 }
