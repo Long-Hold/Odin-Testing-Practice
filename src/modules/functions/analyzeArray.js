@@ -21,7 +21,7 @@ function getArrayAverage(numsArray) {
         initialValue,
     );
 
-    return Math.trunc(arraySum / numsArray.length);
+    return arraySum / numsArray.length;
 }
 
 function getMinValue(numsArray) {
