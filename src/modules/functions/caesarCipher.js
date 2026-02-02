@@ -1,3 +1,3 @@
-export function caesarCiper(word, shiftFactor) {
+export function caesarCipher(word, shiftFactor) {
 
 }
