@@ -8,6 +8,9 @@ export function analyzeArray(numsArray) {
 
     analysisObj.average = getArrayAverage(numsArray);
     analysisObj.min = getMinValue(numsArray);
+    analysisObj.max = getMaxValue(numsArray);
+    analysisObj.length = numsArray.length;
+    
     return analysisObj;
 }
 
@@ -23,4 +26,8 @@ function getArrayAverage(numsArray) {
 
 function getMinValue(numsArray) {
     return Math.min(...numsArray);
+}
+
+function getMaxValue(numsArray) {
+    return Math.max(...numsArray);
 }
