@@ -8,6 +8,6 @@ describe('analyzeArray()', () => {
             description: 'positive integers',
         },
     ])('analyzes an array with $description', ({input, expected}) => {
-        expect(analyzeArray(input)).toBe(expected);
+        expect(analyzeArray(input)).toStrictEqual(expected);
     });
 });
